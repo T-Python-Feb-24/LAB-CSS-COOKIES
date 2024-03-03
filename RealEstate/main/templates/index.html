@@ -1,21 +1,21 @@
 {% extends "base.html" %}
-{% load static %}
-<!DOCTYPE html>
-    {% block title %} Google{% endblock title %}
-  </head>
-  <body>
-    {% block content %} 
-    <section class="section">
-      <form>
-        <br /><br />
-        <div class="s-box">
-          
-        </div>
-      </form>
-      <div class="lang">
-       
-      </div>
-    </section>
-    {% endblock %}
-  </body>
-</html>
+{% load static %} 
+{% block css %} 
+<link rel="stylesheet" href="{% static "css/style.css" %}"> 
+{% endblock css %} 
+{%block title %} Reale state{% endblock title %} 
+{% block content %}
+<div class="title">
+    <h1>FIND YOUR DREAMS</h1>
+</div>
+<div class="parg">
+    <p>
+        Our catalog Will surprise you. Rather, discover an unprecendented offers Of luxury properties. Our
+        catalog will surprise you. Rather. discover an unprecendented offers of luxury properties.
+    </p>
+    
+</div>
+<div class="button">
+    <button>Expolore Properties</button>
+</div>
+{% endblock %}

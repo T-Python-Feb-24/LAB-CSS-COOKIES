@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static "css/base.css" %}">
+    {% block css %} {% endblock css %}
     <title>{% block title %}RealE state{% endblock %}</title>
   </head>
   <body>
@@ -25,29 +26,26 @@
       <nav>
         <a href="{% url "main:home_page" %}">Home</a>
         <a href="{% url "main:properties_page" %}">Properties</a>
+        <a href="#">Services</a>
         <a href="{% url "main:about_page" %}">About</a>
         <a href="{% url "main:contactus_page" %}">Contact</a>
       </nav>
-    <div class="control">
-      <a href="#"><img class="icon" src="{% static "icon/person.svg" %}" alt="">  Sign up</a>
-      <a href="#"><img class="icon" src="{% static "icon/light_mode.svg" %}" alt=""></a>
-      <a href="#"><img class="icon" src="{% static "icon/dark_mode.svg" %}" alt=""></a>
+      <div class="control">
+        <a href="#"><img class="icon" src="{% static "icon/person.svg" %}" alt="">  Sign up</a>
+        <a href="#"><img class="icon" src="{% static "icon/light_mode.svg" %}" alt=""></a>
+        <a href="#"><img class="icon" src="{% static "icon/dark_mode.svg" %}" alt=""></a>
     
+      </div>
     </div>
-    </div>
+    <section>
       {% block content %}
     
       {% endblock content %}
-      <section>
-        <a href="{% url "main:home_page" %}">Home</a>
-        <a href="{% url "main:properties_page" %}">Properties</a>
-        <a href="{% url "main:about_page" %}">About</a>
-        <a href="{% url "main:contactus_page" %}">Contact Us</a>
-      </section>
+    </section>
     </main>
     
     <footer>
-      <h4>Saudi Arabia</h4>
+      <h4>Wisaam Zaidi</h4>
     </footer>
   </body>
 </html>

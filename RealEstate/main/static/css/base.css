@@ -10,19 +10,19 @@ main {
   position: relative;
   background-image: url("../images/skyscraper.jpeg");
   max-width: 100%;
-  min-height: 41rem;
+  min-height: 41.5rem;
   background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-size: 100% 85%;
+  background-size: 120% 85%;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 6rem 0rem 0 14rem;
+  margin: 3rem 0rem 0 10rem;
 }
 .header .Home {
   font-size: 2rem;
@@ -46,7 +46,7 @@ nav a {
   --paddTB: 5rem;
   box-sizing: border-box;
   line-height: 45px;
-  font-weight: 400;
+  font-weight: 480;
   color: rgb(0, 0, 0, 0.87);
   cursor: pointer;
   padding: 12px 1.5rem;
@@ -72,28 +72,21 @@ nav a {
   top: 0.25rem;
   right: 0.35rem;
 }
-.section * {
-  display: flex;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-  justify-items: flex-end;
-}
+
 footer {
   background: #f2f2f2;
-  flex-direction: column;
+  display: flex;
   margin: 0;
   padding: 1px;
   font-size: 14px;
-  font-family: arial, sans-serif;
   color: #202124;
   text-decoration: none;
   margin-bottom: 0;
+  justify-content: center;
 }
 footer h4 {
   font-size: 15px;
-  line-height: 39.5px;
+  line-height: 25px;
   font-weight: 400;
-  padding-left: 29px;
   border: 1px solid #eee;
 }

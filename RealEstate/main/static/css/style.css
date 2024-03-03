@@ -1,92 +1,33 @@
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.title,.parg{
+  display: grid;
+  grid-template-columns: 60%;
+  margin: 4rem;
+  margin-bottom: 0;
+  line-height: 8rem;
 }
-.section {
-  flex: 1;
-  margin-top: 0;
+h1{
+  font-weight: 450;
+  font-size: 10rem;
 }
-.section .logo {
-  display: flex;
-  margin: auto;
-  margin-top: 30px;
-  margin-top: 50px;
-  width: 272px;
-  height: 92px;
+.parg{
+  margin: 2rem 0 0 4rem;
+  grid-template-columns: 50% auto;
+  line-height: 1rem;
 }
-.s-box {
-  max-width: 500px;
-  margin: 5px auto;
-  position: relative;
-  margin-top: -8px;
-  text-align: center;
+p{
+  font-family: Arial, Helvetica, sans-serif;
 }
-.s-box .s-input {
-  display: block;
-  border: 1px solid #ddd;
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 16px;
-  padding: 13px;
-  padding-left: 45px;
-  border-radius: 25px;
-  width: 100%;
-  transition: box-shadow 100ms;
-  outline: none;
-}
-.s-box .s-input:hover {
-  border: 1px solid #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 0 0 2px rgba(0, 0, 0, 0.05),
-    0 0 3px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
-    0 0 5px rgba(0, 0, 0, 0.05), 0 0 4px rgba(0, 0, 0, 0.05),
-    0 0 5px rgba(0, 0, 0, 0.05);
-}
-.s-box .search-icon {
-  width: 20px;
-  opacity: 0.4;
-  position: absolute;
-  top: 13px;
-  left: 14px;
-}
-.s-box .camera-icon {
-  width: 30px;
-  position: absolute;
-  top: 8px;
-  right: 12px;
-}
-.s-box .vs-icon {
-  width: 30px;
-  position: absolute;
-  top: 8px;
-  right: 45px;
-}
-.s-btn {
-  border: 1px solid transparent;
-  padding: 9px 15px;
-  background-color: #f8f9fa;
-  color: #666;
-  font-size: 14px;
+
+.button{
+  margin-top: 2rem;
+  margin-left: 4rem;
   border-radius: 4px;
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 28px;
-  outline: none;
-  cursor: pointer;
-  transition: border-color 100ms;
 }
-.s-btn:hover {
-  border: 1px solid #aaa;
-}
-.lang {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 13px;
-  color: #111;
-}
-.lang a {
-  margin-left: 5px;
-  color: #1a0dab;
-}
-.lang a:hover {
-  text-decoration: underline;
+.button button{
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 50px;
+  padding: 4px 1.3rem ; 
+  background-color: black;
+  color: white;
+  font-size: 10pt;
 }
