@@ -1,3 +1,7 @@
+.email main{
+    background-image: url("../images/email.jpg");
+
+}
 .flex{
     display: flex;
     flex-wrap: wrap;

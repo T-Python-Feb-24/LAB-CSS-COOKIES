@@ -17,7 +17,7 @@
     {% block css %} {% endblock css %}
     <title>{% block title %}Reale state{% endblock %}</title>
   </head>
-  <body {% if request.COOKIES.mode == "True" %} class="dark-mode" {% endif %}>
+  <body {% block email %}{% endblock email %}{% if request.COOKIES.mode == "True" %} class="dark-mode" {% endif %}>
     <main>
       <div class="header">
         <span class="Home">
