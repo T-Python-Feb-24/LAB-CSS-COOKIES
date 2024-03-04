@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Real Estate{% endblock title %}
+{% block style %} <link rel="stylesheet" href={% static "style/home_page.css" %}>{% endblock  %}
+
+{% block content %}
+    <div Class="A">
+    <h1>FIND YOUR <br> DREAMS</h1>
+    <P>Our catlog will suprise you.Rather,discover an unprecendented offers of luxury properties. Our <br>
+    catalog will suprise you.Rather,discover an unprecendented offers of luxury properties.</P>
+    <a href=""><button id="butt-1">Explore Properties</button></a>
+    </div>
+    
+    <div class="bottom">
+    </div>
+    <div class="nav-bar">
+        <div class="icons">
+            <a id = "icon-green"href=""><span class="material-symbols-outlined">house</span></a>
+            <a id="icon-brown"href="{% url "main:properties_page" %}"><span class="material-symbols-outlined">factory</span></a>
+            <a id="icon-pink"href=""><span class="material-symbols-outlined">hotel</span></a>
+            <a id="icon-blue"href=""><span class="material-symbols-outlined">villa</span></a>
+        </div>
+        <div class="choices">
+            <a class="green" href="">ALL</a>
+            <a class="brown" href="">PROPERTIES</a>
+            <a class="pink" href="">HOTEL</a>
+            <a class="blue" href="">VILLA</a>
+        </div>
+</div>
+{% endblock  %} 

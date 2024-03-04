@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Properties{% endblock  %}
+{% block style %} 
+<link rel="stylesheet" href="{% static "style/properties.css" %}">
+{% endblock  %}
+
+{% block content %}
+<div class = "container">
+<h2>OUR PROPERTIES</h2>
+<div class='properties'>
+        {% for property in properties%}
+        <div class="items">
+            <img src="{% static 'images/'|add:property.image %}" alt="{{property.title}}">
+            <h2>{{property.title}}</h2>
+            <button>More</button>
+        </div>
+        {% endfor %}
+    </div>
+    <button>More</button>
+    </div>
+</div>
+
+{% endblock  %}

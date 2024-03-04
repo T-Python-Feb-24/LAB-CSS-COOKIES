@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-section{
+    position: fixed;
+    display: flex;
+    column-gap: 200px;
+    align-items: center;
+    margin-top: 30px;
+    padding-left: 5%;
+}
+
+.section-A h2{
+    font-size: xx-large;
+}
+
+.section-B{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 500px;
+    height: 50px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+
+.section-B a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.section-C {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section-C a {  
+    text-decoration: none;
+    color: black;
+}
+
+.material-symbols-outlined{
+    font-size: large ;
+
+}
+
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+
+
