@@ -18,9 +18,9 @@ a{
 .dark-mode a{
   color: white;
 }
-.dark-mode .header nav,.dark-mode .navigate .nav-block{
+.dark-mode .header nav,.dark-mode .navigate .nav-block,.dark-mode .row >.card{
   background-color: #5a5a5a;
-  color: black;
+  color: white;
   
 }
 
