@@ -1,0 +1,50 @@
+
+{% extends 'main/base.html' %}
+{% block title %} RealEstate {% endblock %}
+{% block background %} 
+<style>
+
+
+body{
+    background-color: rgb(185, 183, 183);
+    background-image: url('/static/images/skyscraper.jpeg');
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+
+<section class="home-section">
+    <h1>FIND YOUR<br>DREAMS</h1>
+    <P class="home-p">Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties. 
+        Our<br>catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</P>
+    <button class="home-button">Expolore Properties</button>
+</section>
+
+
+    <div class='footer-back'> 
+        <footer class="footer">
+
+            <div class="top-footer">
+                <a href="" class="house"><span class="material-symbols-outlined">house</span></a>
+                <a href="" class="factory"><span class="material-symbols-outlined">factory</span></a> 
+                <a href="" class="hotel-icon"> <span class="material-symbols-outlined">hotel</span></a> 
+                <a href="" class="villa-icon"><span class="material-symbols-outlined">villa</span></a> 
+            </div>
+
+            <div class="bottom-footer">
+                <br><br>
+                <a href="" class="all">ALL</a>
+                <a href="" class="properties">PROPERTIES</a>
+                <a href="" class="hotel">HOTEL</a>
+                <a href="" class="villa">VILLA</a>
+            </div>
+    </div>
+
+{% endblock %}

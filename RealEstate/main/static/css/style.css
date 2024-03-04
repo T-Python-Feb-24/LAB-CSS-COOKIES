@@ -1,0 +1,354 @@
+* {
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 120px;
+    margin-left: 120px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.home-button{
+    margin-left: 120px;
+    background-color: black;
+    color:rgb(255, 255, 255);
+    border-radius: 30px;
+    padding:7px 40px;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.home-p{
+    margin-left: 120px;
+}
+
+.home-section{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.container {
+    /* position: fixed; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.left-nav h1 {
+    display: flex;
+    align-items: center;
+    /* margin-left: 0px; */
+    margin-top: 0px; 
+    font-size: 60px; 
+    font-family: sans-serif;
+}
+
+.middle-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 242, 242);
+    border-radius: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    /* padding-top: 20px;
+    padding-bottom: 20px;  */
+}
+
+.middle-nav a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2px;
+}
+
+.right-nav .sign-up:hover {
+    background-color: #d8e7e678;
+    border-radius: 10px;
+}
+
+.right-nav a{
+    color: #000;
+    font-family: sans-serif;
+    display: flex;
+}
+
+.footer {
+    background-color: white;
+    border-radius: 50px;
+    margin: 10px 400px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 50px;
+  }
+  
+.bottom-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 80px;
+    padding-left: 0px;
+    padding-right: 70px;
+}
+
+.bottom-footer a{
+    color: #000;
+  }
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    line-height: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+.icon-text {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 0px;
+  }
+  
+.house {
+    background-color: hwb(132 49% 19%);
+    color: rgb(31, 163, 71);
+    border-radius: 50px;
+    width: 50px;
+    padding: 10px 10px;
+    margin: 0;
+  }
+  
+.factory {
+    background-color: #d8ae7b;
+    color: rgb(145, 92, 18);
+    border-radius: 50px;
+    width: 50px;
+    padding: 10px 10px;
+    margin: 0;
+  }
+  
+.hotel-icon {
+    background-color: #de84d6;
+    color: rgb(176, 50, 147);
+    border-radius: 50px;
+    width: 50px;    
+    padding: 10px 10px;
+    margin: 0;
+  }
+  
+.villa-icon {
+    background-color: #9084d3;
+    color: rgb(76, 68, 183);
+    border-radius: 50px;
+    width: 50px;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+  }
+
+
+.bottom-footer .all {
+    color: rgb(31, 163, 71);
+
+}
+
+.bottom-footer .properties{
+    color: rgb(145, 92, 18);
+}
+
+.bottom-footer .hotel{
+    color: rgb(176, 50, 147);
+
+}
+
+.bottom-footer .villa{
+    color: rgb(76, 68, 183);
+}
+
+.contact{
+    font-size: 40px;
+    padding-top: 0;
+    margin-top: 0;
+} 
+
+h2{
+    margin-left: 120px;
+}
+
+h2 a{
+    color: rgb(37, 18, 131);
+    font-family: sans-serif;
+}
+/* 
+.contact-p{
+    margin-left: 120px;
+} 
+
+
+.contact-page{
+    margin-left: 120px;
+}  */
+
+
+.properties-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+.properties-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+  }
+  
+.property-item {
+      flex: 1 0 300px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+  }
+  
+.property-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+.property-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+.property-item h2 {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+}
+  
+.property-item button {
+      font-size: 14px;
+      color: white;
+      text-transform: uppercase;
+      outline: none;
+      cursor: pointer;
+      width: 300px;
+      height: 40px;
+      font-weight: bold;
+      border-radius: 6px;
+}
+
+.properties-header{
+    font-size: 20px;
+} 
+
+
+.contact_main{
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: left;
+    width:60vw;
+    height: 30vh;
+    /* padding-top: 15vw;
+    padding-right: 20vw; */
+    font-size: 35px;
+    font-weight:450;
+  }
+
+.contact_detiles{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+    /* width: 50vw; */
+    /* padding-right: 20vw; */
+    font-size: 20px;
+    font-weight:300;
+    margin-left: 120px;
+
+  }
+
+.contact_detiles a{
+    color: rgb(67, 67, 250);
+  }
+
+.address{
+    display: flex;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: left;
+    margin-left: 120px;
+    /* width: 70vw;
+    height: 30vh;*/
+    padding-top: 1vw; 
+    /* padding-right: 20vw; 
+    font-size: 25px;
+    font-weight:450;
+    white-space: pre-line; */
+    /* padding-right: 45vw; */
+  
+  }
+
+.map{
+    width: 700px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-left: 45vw;
+  }
