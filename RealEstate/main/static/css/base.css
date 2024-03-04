@@ -3,8 +3,27 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Phudu", sans-serif;
+  font-family: "Phudu", sans-serif; 
+  
 }
+
+.dark-mode main{
+  background-image: url("../images/skyscraper-dark.jpg");
+  background-color: #505050;
+  color: white;
+}
+a{
+  color: black;
+}
+.dark-mode a{
+  color: white;
+}
+.dark-mode .header nav,.dark-mode .navigate .nav-block{
+  background-color: #5a5a5a;
+  color: black;
+  
+}
+
 
 main {
   position: relative;
@@ -17,6 +36,7 @@ main {
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: 120% 85%;
+  background-color: #ebeae9 ;
 }
 .header {
   display: flex;
@@ -31,13 +51,13 @@ main {
 }
 .header nav {
   --paddRL-: 2.5rem;
+  background-color: white;
   display: inline;
   align-items: center;
   justify-content: center;
   margin-left: 14%;
   border-radius: 20px;
   font-weight: 900;
-  background-color: hsl(0, 0%, 100%);
   position: relative;
   padding-left: var(--paddRL-);
   padding-right: var(--paddRL-);
@@ -47,7 +67,6 @@ nav a {
   box-sizing: border-box;
   line-height: 45px;
   font-weight: 480;
-  color: rgb(0, 0, 0, 0.87);
   cursor: pointer;
   padding: 12px 1.5rem;
   border: 0;
@@ -55,31 +74,28 @@ nav a {
 .control {
   display: inline-block;
   position: relative;
-  justify-content: space-between;
+  align-items: center;
   margin-left: 8rem;
 }
 
 .control a {
-  margin-right: 14px;
+  margin-right: 0px;
+  
 }
-.control img {
-  margin: 2px;
-}
-.icon {
+span {
   position: relative;
-  margin: 4px;
-  width: 1rem;
+  font-size: 20px;
   top: 0.25rem;
-  right: 0.35rem;
+  margin: 2px;
+  
 }
 
 footer {
-  background: #f2f2f2;
+  background: #6662629e;
   display: flex;
   margin: 0;
-  padding: 1px;
+  padding: 3px;
   font-size: 14px;
-  color: #202124;
   text-decoration: none;
   margin-bottom: 0;
   justify-content: center;
@@ -88,5 +104,5 @@ footer h4 {
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
-  border: 1px solid #eee;
+  color: white;
 }

@@ -8,6 +8,7 @@
 h1{
   font-weight: 450;
   font-size: 10rem;
+  animation: bounceInLeft 2s ease-in-out; ;
 }
 .parg{
   margin: 2rem 0 0 4rem;
@@ -30,4 +31,134 @@ p{
   background-color: black;
   color: white;
   font-size: 10pt;
+}
+.navigate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.navigate .nav-block{
+  display: flex;
+  margin-top: .2rem;
+  border-radius: 70px;
+  line-height: 2.5rem;
+  gap: 4rem;
+  padding: 0 3rem;
+  background-color: white;
+}
+.block-item{
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-items: center;
+  padding-top: 1rem;
+  gap: 0;
+  --grean:rgb(31, 184, 0);
+  --orange:rgb(184, 116, 0);
+  --violat:rgb(201, 13, 195);
+  --blue: rgb(29, 34, 201);
+  
+  
+}
+.block-item a{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0;
+  font-weight: 420;
+  font-size: .75rem;
+
+ 
+  
+}
+.div-img{
+  position: relative;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 180px;
+}
+
+.div-img span{
+  padding-bottom: 3px;
+}
+.div-img-1{
+  background-color: rgba(31, 184, 0, .4);
+  
+}
+.div-img-1 span{
+  color: var(--grean);
+}
+.item-1{
+  color: var(--grean);
+}
+.div-img-2{
+  background-color: rgb(184, 116, 0,.4);
+  
+}
+.div-img-2 span{
+  color: var(--orange);
+}
+
+.item-2{
+color: var(--orange);
+}
+.div-img-3{
+  background-color: rgba(201, 13, 195,.4);
+}
+.div-img-3 span{
+  color: var(--violat);
+}
+.item-3{
+  color: var(--violat);
+}
+.div-img-4{
+  background-color: rgba(29, 34, 201,.4);
+}
+.div-img-4 span{
+  color: var(--blue);
+  
+}
+.item-4{
+  color: var(--blue);
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }

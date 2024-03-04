@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="{% static "css/base.css" %}">
     {% block css %} {% endblock css %}
-    <title>{% block title %}RealE state{% endblock %}</title>
+    <title>{% block title %}Reale state{% endblock %}</title>
   </head>
-  <body>
+  <body {% if request.COOKIES.mode == "True" %} class="dark-mode" {% endif %}>
     <main>
       <div class="header">
         <span class="Home">
@@ -31,9 +32,11 @@
         <a href="{% url "main:contactus_page" %}">Contact</a>
       </nav>
       <div class="control">
-        <a href="#"><img class="icon" src="{% static "icon/person.svg" %}" alt="">  Sign up</a>
-        <a href="#"><img class="icon" src="{% static "icon/light_mode.svg" %}" alt=""></a>
-        <a href="#"><img class="icon" src="{% static "icon/dark_mode.svg" %}" alt=""></a>
+        <a href="#">
+          <span class="material-symbols-outlined">person</span> 
+          Sign up</a>
+        <a href="{% url 'main:mode_light' %}"><span class="material-symbols-outlined">light_mode</span></a>
+        <a href="{% url 'main:mode_dark' %}"><span class="material-symbols-outlined">dark_mode</span></a>
     
       </div>
     </div>
