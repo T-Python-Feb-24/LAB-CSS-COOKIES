@@ -1,0 +1,192 @@
+* {
+    font-family: "Phudu", sans-serif;
+}
+
+.DarkMode * {
+    color:  rgba(168, 167, 167, 0.781);
+}
+
+.size {
+    padding: 10px 12px;
+    background-color: rgba(230, 230, 230, 0.781);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1;
+}
+
+.dark {
+    background-color: #666;
+    background-image: url('/static/images/skyscraper-dark.jpg');
+    color: #000;
+}
+
+.light {
+    color: #000;
+}
+
+.active {
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 10px 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.left h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-size: 60px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(244, 242, 242);
+    border-radius: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.middle a {
+    padding: 8px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
+
+a:hover {
+    color: red;
+    transform: scale(1.1);
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 200,
+    'opsz' 48;
+    text-align: center;
+}
+
+.right a{
+    color: #000;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* Home Page */
+.home-container p {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 10px 178px;
+    margin-bottom: 30px;
+}
+
+.home-container h1 {
+    font-size: 95px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 179px;
+    margin-right: 454px;
+    animation: fade-out 0.6s ease-in;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+}
+
+.Explore {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 7px 40px;
+    margin-top: 20px;
+    margin-left: 169px;
+    text-decoration: none;
+}
+ .Explore:hover {
+    background-color: rgb(31, 128, 225);
+    color: white;
+    transform: scale(1.1);
+ }
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+li {
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background: #ccc;
+    line-height: 100px;
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: var(--color);
+    transform: scale(0.9);
+    z-index: -1;
+}
+
+ul li:hover:before {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--color);
+}
+
+ul li:hover {
+    color: var(--color);
+    box-shadow: 0 0 4px var(--color);
+    text-shadow: 0 0 4px var(--color);
+}

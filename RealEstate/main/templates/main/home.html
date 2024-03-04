@@ -1,0 +1,45 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block title %} Home {% endblock %}
+
+{% block  styles %}
+<style>
+    body{
+        background-color: rgb(185, 183, 183);
+        background-image: url('/static/images/skyscraper.jpeg');
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <h1>Find Your Dream Home!</h1>
+    <P>Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</P>
+  
+    <a href="{% url 'main:property_page' %}" class="Explore">Explore Properties</a>
+
+    <ul>
+        <li style="--color: #a3aaae">
+            <span class="material-symbols-outlined">house</span>
+            <span>house</span>
+        </li>
+        <li style="--color: #ff5a5f">
+            <span class="material-symbols-outlined">factory</span>
+            <span>factory</span>
+        </li>
+        <li style="--color: #ff9900">
+            <span class="material-symbols-outlined">hotel</span>
+            <span>hotel</span>
+        </li>
+        <li style="--color: #78c257">
+            <span class="material-symbols-outlined">villa</span>
+            <span>villa</span>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}
