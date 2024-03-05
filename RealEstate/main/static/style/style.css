@@ -1,0 +1,406 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Phudu", sans-serif;
+    font-weight: 500;  
+    font-size: 14px;
+}
+
+
+body{
+    
+        background-color: #ebeae9;
+    
+}
+
+
+
+
+
+
+.dreams-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-left: 150px;
+    
+}
+.dreams-text h1 {
+    font-family:"Phudu", sans-serif;
+    font-weight: 500;
+    font-size: 135px;
+    width: 650px;
+    margin-top:0px;
+}
+
+.description-text p {
+    font-size: small;
+    max-width: 600px; 
+    margin: 0 auto ; 
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-top: 0px;
+    width: 50vw;
+    
+}
+
+
+
+
+a{
+    text-decoration: none;
+    justify-content: center;
+    color: black;
+}
+
+.home-icon{
+    font-family:"Phudu", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+
+}
+
+
+
+.explore-button {
+    display: inline-block;
+    background-color: #000000; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    margin-left: 200px;
+  }
+  
+  .explore-button:hover {
+    background-color: #0056b3;
+  }
+.top-nav{
+    text-align: center;
+    display: flex;
+    padding: 50px 130px;
+    position: sticky;
+    top: 0;
+}
+.nav {
+    max-width: 700px;
+    justify-content: space-between; 
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 90%;
+    position: sticky; 
+    top: 35px; 
+    
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nav a {
+    padding: 10px 20px;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+
+
+.nav a:hover {
+    color: #555; 
+}
+.nav a:hover {
+    color: #555;
+}
+.top-left-nav {
+    display: flex;
+    top: 0px;
+    right: 0; 
+    background-color: hsla(0, 0%, 100%, 0); 
+    padding: 10px;
+    position: sticky;
+    z-index: 10;
+    
+}
+
+.top-left-nav nav a {
+    margin-right: 10px;
+    color: #333; 
+    text-decoration: none;
+    
+}
+
+.top-left-nav nav a:hover {
+    color: #666; 
+}
+
+.content-wrapper {
+    flex: 1;
+}
+.footer-bar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ebeae9;
+    padding: 60px 0px;
+    margin-bottom: 0px;
+}
+
+.footer-nav{
+    display: flex;
+    position: relative;
+    width: 660px; 
+    border-radius: 60px;  
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    margin-left: auto;
+    margin-right: auto;
+    top:220px;
+    justify-content: center;
+    
+}
+.icons-bar{
+    width: 500px; 
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 20px;
+    margin: 0px 60px;
+    column-gap: 20px;
+    
+}
+
+.icon{
+    padding: 15px 15px;
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 5px;
+    align-items: center;
+}
+
+.icons h2{
+    font-family:"Phudu", sans-serif;
+    font-weight: 500;
+}
+
+
+.house{
+    color: #27b80b;
+}
+
+.factory{
+    color: #b8750a;
+}
+
+.hotel{
+    color: #c70bc0;
+}
+
+
+.villa{
+    color: #171bc6;
+}
+
+ .card-button{
+    display: flex;
+    position: relative;
+    left:270px;
+    padding: 10px 25px;
+    color: white;
+    margin-top: 16px;  
+    border: none;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 10px;
+
+
+}
+
+
+.card-container{
+    display: flex;
+    position: relative;
+    top: 140px;
+    flex-wrap: wrap;
+    margin-top: -130px;
+    margin-left: 130px;
+    margin-right: 90px;
+
+
+}
+
+.properties-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.property-item {
+    flex: 1;
+    min-width: calc(33.333% - 20px); 
+    max-width: calc(33.333% - 20px); 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    transition: transform 0.2s ease-in-out; 
+}
+.property-info {
+    padding: 10px; 
+}
+.property-item:hover {
+    transform: scale(1.05); 
+}
+
+.property-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.property-title {
+    padding: 15px;
+    text-align: center; 
+    background-color: #f8f8f8; 
+    margin: 0; 
+}
+.page-title {
+    order: -2 !important;
+}
+.card-content h2{
+    font-family: "Phudu", sans-serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.home-container p {
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    margin: 10px 178px;
+    margin-bottom: 30px;
+}
+
+.home-container h1 {
+    font-size: 95px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 179px;
+    margin-right: 454px;
+    animation: fade-out 0.6s ease-in;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+}
+
+.darkMode *{
+    color: white;
+
+}
+
+.darkMode{
+    background-color:#5a5a5a ;
+}
+
+.darkMode .footer-bar{
+    background-color:#5a5a5a ;
+}
+
+.darkMode .nav-frame{
+    background-color:#403f3f ;
+}
+
+.darkMode .footer-nav{
+    background-color:#403f3f ;
+}
+
+.darkMode .card{
+    background-color:#403f3f ;
+}
+
+.light{
+    color:black;
+}
+
+.dark{
+    color:white;
+}
+
+.hide{
+    color:black;
+}
+
+.contact-body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin-left: 150px;
+    top:280px;
+
+}
+.contact-body h4{
+    font-family: "Phudu", sans-serif;
+    font-size: 22px;
+    width: 300px;
+
+}
+
+.contact-body p{
+    font-family: "Phudu", sans-serif;
+}
+
+.contact-body a{
+    font-size: 22px;
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.contact-items{
+    width: 100vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    margin: auto;
+
+}
+.map{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    justify-content: end;
+    left:550px;
+    border:0;
+}

@@ -1,0 +1,78 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} home {% endblock %}
+{% block style %}
+{% if request.COOKIES.darkMode == "True" %}
+<style>
+    body.home-background-dark{
+        background-image: url('/static/images/skyscraper-dark.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+</style>
+{% endif %}
+
+{% if request.COOKIES.darkMode == "False" %}
+<style>
+    body.home-background-light{
+        background-image: url('/static/images/skyscraper.jpeg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    
+
+</style>
+{% endif %}
+{% endblock %} 
+{% block content %}
+
+
+
+
+    
+<div class="dreams-text">
+    <h1>FIND YOUR <BR> DREAMS</h1>
+</div>
+
+<div class="description-text">
+    <p>Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties
+    catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</p>
+    <a href="{% url 'main:properties' %}" class="explore-button">Explore Properties</a>
+</div>
+    
+
+</div>
+<footer>
+    <div class="footer-bar">
+    </div>
+
+    <div class="footer-nav">
+        <div class="icons-bar">
+            <div class="icons house">
+                <span class="material-symbols-outlined icon" style="background-color:#beeab7;">house</span>
+                <h2>All</h2>
+            </div>
+            <div class="icons factory">
+                <span class="material-symbols-outlined icon" style="background-color:#ebd6b6;">factory</span>
+                <h2>Properties</h2>
+            </div>
+            <div class="icons hotel">
+                <span class="material-symbols-outlined icon" style="background-color:#eeb5eb;">hotel</span>
+                <h2>Hotel</h2>
+            </div>
+            <div class="icons villa">
+                <span class="material-symbols-outlined icon" style="background-color:#b9baee;">villa</span>   
+                <h2>Villa</h2>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+
+
+{% endblock %}
+
