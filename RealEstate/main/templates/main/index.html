@@ -1,0 +1,39 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} Real Estate {% endblock %}
+
+{% block img %} <body class="home">{% endblock %}
+
+{% block body %}
+    <section class="welcome">
+        <div class="ani">
+            <div class="phrase">
+                <p>FIND YOUR</p>
+                <p>DREAMS</p>
+            </div>
+            <div class="ad">
+                <p>
+                    Our catalog will surprise you. Rather, discover unprecendented offers of luxury properties. Our <br>
+                    catalog will surprise you. Rather, discover unprecendented offers of luxury properties.
+                </p>
+            </div>
+        </div>
+        <div class="home_button">
+            <a href="{% url 'main:prop_view' %}" class="button">Expplore properties</a>
+        </div>
+        <div>
+            <div class="bottom">
+                <div class="bottom-bar">
+                    <a href="" class="icon house"><span class="material-symbols-outlined">house</span></a>
+                    <a href="" class="icon factory"><span class="material-symbols-outlined">factory</span></a>
+                    <a href="" class="icon hotel"><span class="material-symbols-outlined">hotel</span></a>
+                    <a href="" class="icon villa"><span class="material-symbols-outlined">villa</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="white">
+
+    </footer>
+{% endblock %}
