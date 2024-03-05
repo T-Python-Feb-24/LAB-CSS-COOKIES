@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{%endblock%}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+    
+    {% block style %} {% endblock %}
+
+</head>
+<body >
+    <header class="header">
+        <h1>HOME</h1>
+        <nav class="center_nav">
+         <a href="{% url 'main:index_page' %}">Home</a>
+         <a href="{% url 'main:properties_page' %}">Properties</a>
+         <a href="#">Services</a>
+         <a href="#">About</a>
+         <a href="{% url 'main:contact_page' %}">Contact</a>
+        </nav> 
+        <div class="right_nav">
+            
+            <a href="#" class="material-symbols-outlined">person</a>
+            <a href="#">sign up</a>
+            <a href="#" class="material-symbols-outlined sunny">sunny</a>
+            <a href="#" class="material-symbols-outlined moon">bedtime</a>
+        </div>
+        
+        
+    </header>
+    <main>
+        
+        {% block content %}
+        
+        {% endblock %}
+        
+        
+    </main>
+    
+    <footer class="footer">
+       
+        <div class="items"> 
+            <div class="color_green">   
+                <span class="material-symbols-outlined">house</span>
+                <h6 style="padding: 4px 15px;">HOME</h6>
+            </div>
+            <div class="color_brown">
+                <a href="{% url 'main:properties_page' %}" style="text-decoration: none;   color:rgb(92, 60, 41);" class="material-symbols-outlined">factory</a>
+                <h6 style="padding: 4px 10px;">Properties</h6>
+            </div>
+            <div class="color_magenta">
+                <span class="material-symbols-outlined">hotel</span>
+                <h6 >Hotel</h6>
+            </div>
+            <div class="color_blue">
+                <span class="material-symbols-outlined">villa</span>
+                <h6>villa</h6>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

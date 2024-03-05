@@ -1,0 +1,39 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}Home{% endblock %}
+</head>
+<body>
+    {% block content %}
+    <body>
+    
+       
+        <div class="the_main">
+            <h2 style="padding-top: 3%;padding-left: 30px;">OUR PROPERTIES</h2>
+            <br>
+           
+            <div class="property-list">
+                {% for property in properties %}
+                    <div class="property">
+                        <img src="{% static 'images/' %}{{ property.image }}" alt="{{ property.title }}">
+                        <h3 style="margin-left: 20px;">{{ property.title }}</h3>
+                        <a href="#" class="button2">more</a>
+                    </div>
+                    <br>
+                {% endfor %}
+
+
+        </div>
+        </div>
+        
+        
+    </body>
+    {% endblock %}
+</body>
+</html>

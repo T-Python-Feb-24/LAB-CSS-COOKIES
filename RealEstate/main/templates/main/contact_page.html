@@ -1,0 +1,44 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block style %}     
+    <style>
+        body{
+            background-image: url('{% static "images/email.jpg" %}');
+        }
+    </style>
+
+    {% endblock %}
+
+</head>
+<body >
+
+    {% block content %}
+    <div class="main_contact">
+    <div>
+    <h2 style="font-size: 40px;">contact us</h2>
+    <br>
+    <p id="Telephone">Telephone: <a href="#">+96657263883764</a></p>
+    <p id="email">Email: <a href="mailto:info@realeastate.com">info@realeastate.com</a></p>
+    <p id="Address">Address: </p>
+    <p id="the_address"> anas bin malik,riyadh <br> 
+        building w-112 <br>
+        saudi arabia</p>
+    </div>
+    <div class="google_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.2868021935287!2d46.71034277589896!3d24.85405234551292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efbd2d9c324c7%3A0x9124f530f1b56443!2sTuwaiq%20Academy!5e0!3m2!1sen!2ssa!4v1709613816433!5m2!1sen!2ssa" width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+    {% endblock %}
+
+
+    {% block footer %}
+
+        {% endblock %}
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+    <link rel="stylesheet" href="">
+</head>
+{% block content %}
+    <body style="background-image: url('{% static "images/skyscraper.jpeg" %}');">
+    
+    <h1 class="dream">FIND YOUR <BR> DREAMS</h1>
+   
+     <p class="para">Our catalog will surprise you. Rather,discover an unprecendented offers of luxury properties.Our  <br> catalog will surprise you. Rather,discover an unprecendented offers of luxury properties.</p>  
+    <a href="{% url 'main:properties_page' %}" class="button1">Expolore Properties</a>
+    </body>
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
+</html>

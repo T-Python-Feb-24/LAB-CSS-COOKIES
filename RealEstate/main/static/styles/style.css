@@ -1,0 +1,291 @@
+* {
+    padding:0px;
+    margin: 0px;
+  
+}
+body{
+    background-color:rgb(235,234,233);
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+
+.dream{
+    font-size: 120px;
+    display: flex;
+    padding: 4% 16%;
+
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    animation: fade-out 0.6s ease-in;
+
+}
+.para{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 630;
+    font-style: normal;
+    padding-left: 16%;
+    margin-bottom: 40px;
+
+}
+.button1{
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1.5% 16%;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+.header{
+    display: flex;
+    align-items: center;
+    column-gap: 200px; 
+    justify-content: center;
+    padding-top: 100px;
+    position: sticky;
+    top:0;
+}
+.header h1{
+    font-size: 43px;
+    font-family: "Phudu";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+h6{
+    text-align: center;
+}
+.center_nav{
+    display: flex;
+    column-gap: 50px; 
+    border:none;
+    padding: 20px 60px;
+    border-radius: 40px;
+    background-color: white;
+    font-weight: bold;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+.center_nav a ,.right_nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+.right_nav{
+    
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    font-weight: bold;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.phudu-google_font {
+  font-family: "Phudu", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.footer{
+    display: flex;
+    
+    justify-content:center;
+    margin-top: 0%;
+    padding: 90px;
+    background-color: rgb(235,234,233);
+    margin-top: 6%;
+}
+.items{
+    display:flex;
+    position: relative;
+    padding: 30px 50px;
+    margin-top: -170px;
+    column-gap: 100px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 80px;
+}
+.color_magenta{
+    background-color:rgba(255, 0, 255, 0.475);
+    align-items: center;
+    border-radius: 50px;
+    color:darkmagenta;
+    padding:25px 32px ;
+    transition: 400ms ease-out;
+
+}
+.sunny:hover{
+    color: rgb(255, 230, 0);
+}
+.moon:hover{
+    color: white;
+}
+
+.color_blue{
+    background-color:rgba(52, 64, 196, 0.455);
+    padding: 25px 35px;
+    align-items: center;
+    
+    border-radius: 50%;
+    color:blue;
+    transition: 400ms ease-out;
+}    
+.color_blue:hover,.color_green:hover,.color_brown:hover,.color_magenta:hover{
+    transform: scale(1.2);
+    
+}    
+
+.color_green{
+    background-color:rgba(17, 255, 0, 0.312);
+    padding: 17px 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(20, 163, 20);
+    transition: 400ms ease-out;
+
+}
+.color_brown{
+
+    background-color:rgba(207, 128, 44, 0.475);
+    padding: 20px 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    transition: 400ms ease-out;
+    color:rgb(92, 60, 41);
+}
+
+
+@keyframes fade-out {
+from {
+    opacity: 0;
+        transform: scale(0,0);
+    }    
+
+    to {
+        opacity: 1;
+        transform: scale(1,1);
+       
+    }    
+    
+}    
+
+.property-list{
+    display:inline-flex;
+    margin-top: 20px;
+    /* margin-left: 100px; */
+    margin-left: 10px;
+    
+    column-gap: 20px;
+}
+.property{
+    
+    border:none;
+    background-color: rgba(219, 217, 215, 0.833);
+    border-radius: 30px;
+    align-items: center;
+    text-align: left;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+    
+}
+
+.the_main h2{
+   
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.property h3{
+    
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.property img{
+    width:500px;
+    height: 300px;
+    border-radius: 30px 30px 0px 0px ;
+    border: none;
+    
+    
+}
+.button2{
+    display: flex;
+    /* justify-content: center; */
+    /* padding: 10px ; */
+    margin-left: 390px;
+    margin-bottom: 20px;
+    border: solid black 1px;
+    background-color: black;
+    width: 50px;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+#Telephone,#Address,#email{
+    font-size: 30px;
+}
+
+.main_contact{
+    display: flex;
+    margin: 100px 0px;
+    justify-content: center;
+    column-gap: 25vw;
+    
+}
+.main_contact h2{
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+.google_map iframe{
+    border-radius: 30px;
+}
+#the_address{
+    font-weight: bold;
+    
+}
+#Telephone,#email,#Address{
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
