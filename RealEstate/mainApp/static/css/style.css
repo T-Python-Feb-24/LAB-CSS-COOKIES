@@ -1,0 +1,315 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Phudu", sans-serif;
+    font-size: 18px;
+}
+body{
+    background-image: url('/static/images/skyscraper.jpeg');
+    flex: 1;
+    background-size: cover;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nav-container a{
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    transition: 200ms ease-in;
+    padding: 10px 8px;
+}
+.nav-container a:hover{
+    align-items: center;
+    background-color:black;
+    color: white;
+    border-radius: 50px;
+    scale: 1.1;
+}
+.nav-pages{
+    display: flex;
+    column-gap: 50px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px 60px;
+}
+
+footer{
+    background-color: #ccc;
+    padding: 40px;
+}
+/*-------------------- Done for base.html --------------------*/ 
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.main-phrase{
+    width: 50%;
+    margin-top: 10px;
+}
+.main-phrase p{
+    font-size: 100px;
+    animation: fade-out 0.6s ease-in;
+}
+
+.discribtion-phrase{
+    width: 40%;
+}
+.discribtion-phrase p{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.button-div{
+    margin-top: 30px;
+}
+.button-div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 25px;
+    padding: 5px 14px;
+    transition: 150ms ease-in;
+}
+.button-div a:hover{
+    background-color: white;
+    color: black;
+}
+
+.down-nav{
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 50px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 10px 10px;
+}
+.down-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.down-nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all-button{
+    transition: 150ms ease-in;
+}
+.all-button:hover{
+    scale: 1.1;
+}
+.all-button span{
+    color: green;
+    background-color: rgb(162, 231, 162);
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+.all-button a{
+    color: green;
+}
+
+.properties-button{
+    transition: 150ms ease-in;
+}
+.properties-button:hover{
+    scale: 1.1;
+}   
+
+.properties-button span{
+    color: orangered;
+    background-color: rgb(250, 174, 146);
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+.properties-button a{
+    color: orangered;
+}
+
+.hotel-button{
+    transition: 150ms ease-in;
+}
+.hotel-button:hover{
+    scale: 1.1;
+}
+.hotel-button span{
+    color: violet;
+    background-color: rgb(243, 190, 243);
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+.hotel-button a{
+    color: violet;
+}
+.villa-button{
+    transition: 150ms ease-in;
+}
+.villa-button:hover{
+    scale: 1.1;
+}
+.villa-button span{
+    color: blue;
+    background-color: rgb(158, 158, 245);
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+.villa-button a{
+    color: blue;
+}
+@keyframes fade-out {
+
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+    
+}
+/*-------------------- Done for home.html --------------------*/ 
+.dark_mode{
+    background-image: url('/static/images/skyscraper-dark.jpg');
+    flex: 1;
+    background-size: cover;
+}
+.dark_mode .nav-pages{
+    display: flex;
+    column-gap: 50px;
+    background-color: rgb(110, 108, 108);
+    border-radius: 25px;
+    padding: 25px 60px;
+}
+.dark_mode .nav-container a:hover{
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    scale: 1.1;
+}
+.dark_mode footer{
+    background-color: rgb(110, 108, 108);
+    padding: 40px;
+}
+.dark_mode .down-nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: rgb(110, 108, 108);
+    border-radius: 50px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 10px 10px;
+    box-shadow: 5px 10px;
+}
+/*-------------------- Done for dark_mode --------------------*/ 
+
+.properties-body{
+    background-image: none;
+    background-color: rgb(215, 215, 215);
+}
+
+.properties-phrase{
+    font-size: 25px;
+    margin-left: 10rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.properties-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 100px;
+}
+
+.properties-cards > div {
+    width: 300px; /* Adjust the width as needed */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.properties-cards > div:hover {
+    transform: scale(1.05);
+}
+
+.properties-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.properties-cards p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.more-button{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+.more-button:hover{
+    background-color: white;
+    color: black;
+}
+/*-------------------- Done for properties.html --------------------*/ 
+
+.contact-body{
+    background-image: url('/static/images/email.jpg');
+    flex: 1;
+    background-size: cover;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 20px;
+}
+.maps{
+    border-radius: 15px;
+}
+.right-side{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contact-phrase{
+    font-size: 25px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.TELEPHONE{
+    font-weight: bold;
+}
+.EMAIL{
+    font-weight: bold;
+}
+.Address{
+    font-weight: bold;
+}
+.location{
+    white-space: pre-line;
+}

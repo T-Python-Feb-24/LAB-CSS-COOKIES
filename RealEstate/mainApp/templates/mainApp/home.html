@@ -1,0 +1,41 @@
+{% extends 'mainApp/base.html' %}
+{% block title %} Home {% endblock %}
+
+
+{% block content %}
+<main class="main-container">
+    <div class="main-phrase">
+        <p>
+            Find Your Dreams
+        </p>
+    </div>
+
+    <div class="discribtion-phrase">
+        <p>Our catalog will surprise you, discover an unprecendented offers of luxury properties. Our
+            catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</p>
+    </div>
+    
+    <div class="button-div">
+        <a href="{% url 'mainApp:properties_page' %}">Explore properties</a>
+    </div>
+</main>
+
+<nav class="down-nav">
+    <div class="all-button">
+        <span class="material-symbols-outlined">house</span>
+        <a href="">All</a>
+    </div>
+    <div class="properties-button">
+        <span class="material-symbols-outlined">factory</span>
+        <a href="">PROPERTIES</a>
+    </div>
+    <div class="hotel-button">
+        <span class="material-symbols-outlined">hotel</span>
+        <a href="">HOTEL</a>
+    </div>
+    <div class="villa-button">
+        <span class="material-symbols-outlined">villa</span>
+        <a href="">VILLA</a>  
+    </div>
+</nav>
+{% endblock %}
