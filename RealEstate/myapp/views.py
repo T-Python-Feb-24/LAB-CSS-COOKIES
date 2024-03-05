@@ -8,9 +8,9 @@ def home_view(request:HttpRequest):
 
     return render(request, "main/home.html")
 
-def properties(request:HttpRequest):
+#def properties(request:HttpRequest):
 
-    return render(request, "main/properties.html")
+#    return render(request, "main/properties.html")
 
 def home(request):
     properties = [
