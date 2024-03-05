@@ -1,6 +1,5 @@
-{% load static %}
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block title %}property{% endblock %}
 
 {% block PageContent %}
@@ -8,7 +7,7 @@
 <header>
     <h1>Welcome to Real Estate</h1>
     <p>Find your dream home with us</p>
-    <a href="{% url 'properties' %}" class="explore-btn">Explore Properties</a>
+    <a href="{% url 'properties' %}">Properties</a>
 </header>
 
 <main>
