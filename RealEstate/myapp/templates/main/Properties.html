@@ -1,0 +1,24 @@
+{% load static %}
+{% extends 'main/base.html' %}
+
+{% block title %}property{% endblock %}
+
+{% block PageContent %}
+
+<header>
+    <h1>Welcome to Real Estate</h1>
+    <p>Find your dream home with us</p>
+    <a href="{% url 'properties' %}" class="explore-btn">Explore Properties</a>
+</header>
+
+<main>
+    <section class="properties">
+        {% for property in properties %}
+        <div class="property-card">
+            <img src="{% static 'images/' %}{{ property.image }}" alt="{{ property.title }}">
+            <h2>{{ property.title }}</h2>
+        </div>
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}

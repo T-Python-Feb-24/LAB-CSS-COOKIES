@@ -1,0 +1,391 @@
+
+body {
+
+    
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Phudu', sans-serif; 
+    background-image: url('/static/resources/skyscraper.jpeg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.content {
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+
+/* Keyframes for the slide-in animation */
+@keyframes slideIn {
+    from {
+        left: -300px; /* Start position outside the screen */
+    }
+    to {
+        left: 50px; /* End position, adjust as needed */
+    }
+}
+/*
+.shine {
+    font-size: 100px;
+    color: #fff;
+    position: relative;
+    animation: shineEffect 2s ease-in-out infinite; 
+}
+*/
+@keyframes shineEffect {
+    0% { opacity: 0.5; text-shadow: 0 0 10px #fff; }
+    50% { opacity: 1; text-shadow: 0 0 20px #ff0; }
+    100% { opacity: 0.5; text-shadow: 0 0 10px #fff; }
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 1.1rem;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+nav button {
+    background-color: rgb(225, 138, 31);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+/*
+.middle-section {
+    flex-grow: 0.3;
+    background-color: #f0f0f0;
+    justify-items:center ;
+    border-radius: 25px;
+    text-align: center;
+    height: 50px;;
+}
+.navigation-box{
+    display: flex;
+    justify-items: space-evenlynter;
+    max-width: 800px; 
+    margin:auto;
+}*/
+.middle-section {
+    flex-grow: 0.2;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+.navigation-box a {
+    margin: 0 35px; /* Adjust the margin as needed */
+}
+
+.navigation-box {
+    display: flex;
+    justify-items: space-evenly;
+    width:auto;
+    margin: auto;
+}
+.navigation-box a {
+    color: black; /* Set the default color to black */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.navigation-box a:hover {
+    color: #555; /* Change color on hover */
+}
+.left-section span {
+    
+    font-family: "Phudu", sans-serif;
+    font-size: 45px; 
+    width: 500 px;
+    margin: 0 50px;
+}
+.right-section {
+    justify-items: space-evenly;
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+}
+.right-section a {
+    margin-right: 20px;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    overflow: hidden; /* Hide overflow to prevent horizontal scrollbar */
+}
+
+.find-your-dreams {
+    font-size: 13em;
+    font-weight: bold;
+    color: #000000;
+    animation: slideIn 2s forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+.header-bottom {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    text-align: center;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Evenly space the items */
+    position: fixed;
+    bottom: 125px; /* Adjust the distance from the bottom */
+    left: 50%; /* Position it at the horizontal center */
+    transform: translateX(-50%); /* Adjust horizontally to center */
+    width: 80%; /* Set the width */
+    max-width: 600px; /* Limit the maximum width */
+    z-index: 999; /* Ensure it appears above other content */
+    box-shadow: 0 0 0px rgba(0, 0, 0, 50); /* Add shadow */
+}
+
+.header-bottom a {
+    margin: 0 10px; /* Adjust the horizontal margin between items */
+}
+
+
+
+
+
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+
+
+.explore-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #0056b3;
+}
+
+.properties {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.property-card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.home{
+ text-align: center;
+
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 0.05rem;
+    text-align: center;
+}
+/*icons styles*/
+
+.material-symbols-outlined{
+    margin-right: 15px;
+}
+
+.icon-container {
+    text-align: center;
+    position: relative; /* Position relative for absolute positioning of circle */
+}
+
+/* Define styles for the circular background */
+/*
+.circle-green {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: lightgreen; /* Light green background color 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+.circle-green:hover {
+    background-color: green; /* Dark green background color on hover 
+}
+.icon-green {
+    font-family: 'Material Icons'; /* Replace 'Material Icons' with your font icon family 
+    font-size: 24px;
+    color: darkgreen; /* Dark green color for the icon *
+    transition: color 0.3s; /* Smooth transition for icon color change *
+}
+.circle-green:hover .icon-green {
+    color: lightgreen; /* Light green color for the icon on hover *
+}
+.circle-brown {
+    background-color: rgb(208, 125, 16);
+    width: 50px; /* Adjust the size of the circle *
+    height: 50px; /* Adjust the size of the circle *
+    border-radius: 50%; /* Make the shape circular *
+    position: absolute; /* Position absolute for precise placement *
+    top: -25px; /* Adjust the vertical position to center *
+    left: 50%; /* Center horizontally *
+    transform: translateX(-50%); /* Center horizontally *
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-pink {
+    background-color: rgb(204, 53, 159);
+    width: 50px; /* Adjust the size of the circle *
+    height: 50px; /* Adjust the size of the circle *
+    border-radius: 50%; /* Make the shape circular *
+    position: absolute; /* Position absolute for precise placement *
+    top: -25px; /* Adjust the vertical position to center *
+    left: 50%; /* Center horizontally *
+    transform: translateX(-50%); /* Center horizontally *
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-blue {
+    background-color: rgb(14, 106, 168);
+    width: 50px; /* Adjust the size of the circle *
+    height: 50px; /* Adjust the size of the circle *
+    border-radius: 50%; /* Make the shape circular *
+    position: absolute; /* Position absolute for precise placement *
+    top: -25px; /* Adjust the vertical position to center *
+    left: 50%; /* Center horizontally *
+    transform: translateX(-50%); /* Center horizontally *
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+.color_green{
+    background-color:rgba(17, 255, 0, 0.312);
+    padding: 17px 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(20, 163, 20);
+    transition: 400ms ease-out;
+
+}
+.color_brown{
+    background-color:rgba(196, 121, 40, 0.805);
+    padding: 17px 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(152, 103, 6);
+    transition: 400ms ease-out;
+
+}
+.color_pink{
+    background-color:rgba(209, 40, 141, 0.864);
+    padding: 17px 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(183, 21, 195);
+    transition: 400ms ease-out;
+
+}
+.color_blue{
+    background-color:rgba(23, 86, 223, 0.845);
+    padding: 17px 12px;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    color:rgb(4, 77, 156);
+    transition: 400ms ease-out;
+
+}
+.color_blue:hover,.color_green:hover,.color_brown:hover,.color_pink:hover{
+    transform: scale(1.2);
+
+}
+.text {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/* Define styles for the font icon */
+.icon {
+    font-family: 'Material Icons'; /* Replace 'Material Icons' with your font icon family */
+    font-size: 24px;
+    color: #fff; /* Default color */
+    transition: color 0.3s; /* Transition effect for color change */
+    cursor: pointer;
+}
+
