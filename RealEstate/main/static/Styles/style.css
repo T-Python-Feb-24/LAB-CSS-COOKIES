@@ -1,0 +1,310 @@
+
+
+* {
+    padding:0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    
+}
+
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 0.2rem;
+    padding: 45px 20px;
+    align-items: center;
+   
+}
+
+.right {
+ color: black;
+ border:none;
+ background: none;
+ 
+}
+.right a{
+   color: black;
+}
+.right .dark:hover{
+   background-color: rgb(61, 92, 123);
+   color: white;
+   transform: scale(1.1);
+}
+.right .light:hover{
+   background-color: rgb(217, 230, 244);
+   color: rgb(24, 23, 23);
+   transform: scale(1.1);
+}
+.sign {
+   background: none;
+   border:none ;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     
+}
+.top a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    
+}
+.top a:hover{
+   background-color: rgb(140, 195, 249);
+   color: white;
+   transform: scale(1.1);
+}
+
+.left a {
+    margin: -40px 40px;
+    color:black;
+    text-decoration: none;
+    text-align: left;
+    font-size: xx-large; 
+ }
+ .left a:hover {
+   background-color: rgb(140, 195, 249);
+   color: white;
+   transform: scale(1.1);  
+}
+
+ .top button{
+    margin-top: -70px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    padding:20px 30px;
+    display: flex;
+    column-gap: 40px;
+    background-color: rgb(245, 243, 241);
+ }
+
+ .footer {
+   background-color: white;
+   border-radius: 50px;
+   margin: -60px 200px;
+   padding-top: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+   
+ }
+ 
+.top-footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+   column-gap: 40px;
+ }
+ 
+.bottom-footer{
+   display: flex;
+   flex-direction: row;
+   column-gap: 15px;
+   padding-right: 10px;
+   align-items: center;
+   
+}
+
+.bottom-footer a{
+   color: #000;
+ }
+
+ 
+.house {
+   background-color: hwb(132 49% 19%);
+   color: rgb(31, 163, 71);
+   border-radius: 50px;
+ }
+ 
+.factory {
+   background-color: #d8ae7b;
+   color: rgb(145, 92, 18);
+   border-radius: 50px;
+ }
+ 
+.hotel-icon {
+   background-color: #de84d6;
+   color: rgb(176, 50, 147);
+   border-radius: 50px;
+
+ }
+ 
+.villa-icon {
+   background-color: #9084d3;
+   color: rgb(76, 68, 183);
+   border-radius: 50px;
+ }
+
+a{
+   text-decoration: none;
+ }
+
+
+.bottom-footer .all {
+   color:rgb(31, 163, 71);
+}
+
+.bottom-footer .properties{
+   color: rgb(145, 92, 18);
+}
+
+.bottom-footer .hotel{
+   color: rgb(176, 50, 147);
+}
+
+.bottom-footer .villa{
+   color: rgb(76, 68, 183);
+
+}
+
+.footer-back{
+   background-color: rgb(185, 183, 183);
+   margin:10px 10px;
+   padding: 40px 40px;
+}
+ .background h1{
+    font-family: "phudu";
+    font-size: 70px;
+    margin-top: 10px;
+    animation: slideInFromLeft 0.6s ease-out;
+
+ }
+ @keyframes slideInFromLeft  {
+
+   from {
+       opacity: 1;
+       transform: translateX( -100px);
+       color: #de84d6;
+
+   }
+
+   to {
+       opacity: 1;
+       transform: translateX( 0px);
+       color: aquamarine;
+   }
+   
+}
+ .background p{
+    font-size: small;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 10px;
+ }
+ .background button{
+   margin: -10px 8px;
+   margin-bottom: 4px;
+    padding: 7px 7px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+ }
+ .background button:hover{
+   background-color: rgb(31, 128, 225);
+   color: white;
+   transform: scale(1.1);
+ }
+
+ .Properties h1{
+    text-align: left;
+    color: black;
+    padding: 10px 30px;
+    font-size: medium;
+    animation: fade-out 0.6s ease-out;
+    
+
+ }
+ @keyframes fade-out {
+
+   from {
+       opacity: 1;
+       transform: translate(0, 100px);
+       color: rgb(0, 102, 255);
+
+   }
+
+   to {
+       opacity: 1;
+       transform: translate(0, 0px);
+       color: rgb(0, 204, 255);
+   }
+   
+}
+ 
+ 
+.contact{
+   padding: 30px 60px;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   row-gap: 20px;
+   top:-60px;
+} 
+.contact h1{
+ font-size: 15px;
+ margin-bottom: 10px;
+}
+.contact a:hover{
+color:blue;
+text-decoration: underline;
+}
+.properties-base{
+   display: flex;
+   position: relative;
+   top: -20px;
+   flex-wrap: wrap;
+   padding: 5px;
+   margin-left: 150px;
+   margin-right: 90px; 
+   
+}
+.property-image{
+   display: flex;
+   flex-direction: column;
+   width: 260px;
+   overflow: hidden;
+   margin: 10px;
+   border-radius: 20px  ;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+   transition:transform 0.3 ease-in-out;
+   
+
+}
+.property-image:hover{
+   transform: translateY(-10px);
+}
+.property-image button{
+  color: rgb(247, 241, 241);
+  background-color: black;
+  border: none;
+  border-radius: 30px;
+  width: 20%;
+  margin-left: 190px;
+  margin-bottom: 10px;
+}
+
+
+   
+
+.modeDark * {
+   background-image: url("/static/images/skyscraper-dark.jpg");
+   background-size:cover;
+
+}
+.dark *{
+   background-image: url("/static/images/skyscraper-dark.jpg");
+   background-size:cover;
+}
+.active {
+   color: #9084d3;
+}

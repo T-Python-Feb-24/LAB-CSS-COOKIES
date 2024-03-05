@@ -1,0 +1,61 @@
+
+{% extends 'main/base.html' %}
+{% block title %} main page {% endblock %}
+{% if request.COOKIES.modeDark == "True" %} class="modeDark" {% endif %}>
+
+{% block home %}
+  <style>
+    body  {
+    background-image: url("/static/images/skyscraper.jpeg");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    }
+  .darkmode * {
+    background-image: url("/static/images/skyscraper-dark.jpg");
+    background-size:cover;
+    
+ }
+  
+ </style>
+{% endblock %}
+{% block content %}
+
+
+<section class="background">
+    <h1>FIND YOUR <br>
+       DREAMS</h1>
+    <P>Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties. Our <br>
+      catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</P>
+      <a href="{% url 'main:properites_view'%}"><button>Expolore Properties</button></a>
+
+ 
+</section>
+
+
+
+
+    <div class='footer-back'> 
+      <footer class="footer">
+
+          <div class="top-footer">
+              <a href="" class="house"><span class="material-symbols-outlined">house</span></a>
+              <a href="" class="factory"><span class="material-symbols-outlined">factory</span></a> 
+              <a href="" class="hotel-icon"> <span class="material-symbols-outlined">hotel</span></a> 
+              <a href="" class="villa-icon"><span class="material-symbols-outlined">villa</span></a> 
+          </div>
+
+          <div class="bottom-footer">
+              <br><br>
+              <a href="" class="all">ALL</a>
+              <a href="" class="properties">PROPERTIES</a>
+              <a href="" class="hotel">HOTEL</a>
+              <a href="" class="villa">VILLA</a>
+          </div>
+  </div>
+
+
+  </footer>
+
+
+{% endblock%}

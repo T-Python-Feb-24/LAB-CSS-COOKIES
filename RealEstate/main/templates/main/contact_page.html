@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% block title %} contact page {% endblock %}
+{% block home %}
+  <style>
+    body  {
+    background-image: url("/static/images/email.jpg");
+    background-size:cover;
+    width: 800px;
+    height: 600px;
+    }
+    
+  
+    .map  {
+    margin-left: 350px;
+    margin-top: -250px;
+   }
+    
+
+  </style>
+{% endblock %}
+{% block content %}
+
+
+<section class="contact">
+    <h1>CONTACT US</h1>
+    <h2>TELEPHONE:<a href="tel:+556793301">+556793301</a></h2>
+    <h2 class="email">EMAIL:<a href="email:lmyy435@gmail.com">lmyy435@gmail.com</a></h2>
+    <h2>ADDRESS:</h2>
+    <h4>ANAS BIN MALIK,RIYADH<br>
+     BULIDDING W-112<br>
+        SAUDI ARABIA </b></h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14485.637463020406!2d46.63940274585691!3d24.815670426483486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee40eefcb6a9d%3A0xbc4308498520f827!2sAnas%20Ibn%20Malik%20Rd%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1709584478157!5m2!1sen!2ssa" class="map" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> >
+
+
+</section> 
+
+
+
+
+{% endblock%}

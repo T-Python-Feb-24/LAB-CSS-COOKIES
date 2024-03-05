@@ -1,0 +1,29 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} properties page {% endblock %}
+{% block home %}
+  <style>
+    body  {
+    background-color:rgb(221, 217, 210);
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<div class="Properties">
+ <h1>OUR PROPPERTIES</h1>
+  <div class="properties-base">
+    {% for property in properties %}
+    <div class="property-image">
+      <img src="{% static 'images/'|add:property.image %}"  alt="{{ property.title }}">
+      <h2>{{ property.title }}</h2>
+      <button>More</button>
+    </div>
+    {% endfor %}
+  </div>
+ </div>
+</div>
+{% endblock %}
