@@ -38,8 +38,8 @@
         <nav class="right">
             <span class="material-symbols-outlined">person</span>
             <a href="#" class="sign-up">Sign up</a>
-           <a href="{% url 'main:light_mode'%}" class="size light {% if request.COOKIES.DarkMode == 'False' %} active {% endif %}"><span class="material-symbols-outlined">light_mode</span></a>
-           <a href="{% url 'main:dark_mode'%}" class="size dark {% if request.COOKIES.DarkMode == 'True' %} active {% endif %}"><span class="material-symbols-outlined">dark_mode</span></a>
+           <a href="{% url 'main:light_mode'%}" class="light"><span class="material-symbols-outlined {% if request.COOKIES.DarkMode == 'False' %} active1 {% endif %}">light_mode</span></a>
+           <a href="{% url 'main:dark_mode'%}" class="dark"><span class="material-symbols-outlined {% if request.COOKIES.DarkMode == 'True' %} active2 {% endif %}">dark_mode</span></a>
         </nav>
     </div>
 

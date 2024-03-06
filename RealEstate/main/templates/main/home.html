@@ -6,13 +6,27 @@
 {% block  styles %}
 <style>
     body{
-        background-color: rgb(185, 183, 183);
-        background-image: url('/static/images/skyscraper.jpeg');
+        background-image: url("{% static 'images/skyscraper.jpeg' %}");
         height: 50px;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
     }
 </style>
+
+{% if request.COOKIES.DarkMode == "True" %}
+<style>
+    body{
+        background-image: url("{% static 'images/skyscraper-dark.jpg' %}");
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+</style>
+{% endif %}
+
+
 {% endblock %}
 
 {% block content %}
