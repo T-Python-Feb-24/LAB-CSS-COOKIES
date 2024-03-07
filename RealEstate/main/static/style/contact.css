@@ -4,3 +4,28 @@ body{
     background-size: cover;
     margin-bottom: 30%;
 }
+
+
+.base{
+    padding-top: 10%;
+    padding-left: 5%;
+    position: absolute;
+
+}
+
+h1{
+    font-size: x-large;
+    margin-bottom: 40px;
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: large;
+}
+
+.map{
+    padding-left: 40%;
+    padding-top: 10%;
+
+    
+}

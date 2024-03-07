@@ -5,12 +5,14 @@ body{
 
 h2{
     padding-top: 12%;
+    padding-bottom: 10%;
     padding-left: 5%;
 }
 
 .container{
+    position: relative;
+    flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
 }
 
