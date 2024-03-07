@@ -1,79 +1,47 @@
-{% load static %}
+{% extends 'main/base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+{% block content %}
+
+
+    <div class="wrapper homepage-content">
+        <div class="sub-content">
+            <h1>Find Your Dreams</h1>
+
+            <p>Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties. Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</p>
     
+            <a class="btn" href="{% url 'main:properties_page' %}">Expolore Properties</a>
+        </div>
 
-</head>
-<body>
-
-    <div class="container"> 
-
-        <nav class="left-nav">
-            <h1>HOME</h1>
-        </nav>
-
-        <nav class="middle-nav">
-            <a href="">Home</a>
-            <a href="">Properties</a>
-            <a href="">Services</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-        </nav>
-        <nav class="find">
-                <h2>FIND YOUR DREAMS</h2>
-                <P>Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties. 
-                Our catalog will surprise you. Rather, discover an unprecedented offers of luxury properties.</P>
-                <button>Expolore Properties</button>
-        </nav>
-
-        <nav class="right-nav">
-            <span class="material-symbols-outlined">person</span>
-            <a href="" class="sign">Sign up</a>
-           <a href=""><span class="material-symbols-outlined">light_mode</span></a>
-           <a href=""><span class="material-symbols-outlined">dark_mode</span></a>
-        </nav>
     </div>
 
-    {% block content %}
+    <div class="bottom-container">
 
-    {% endblock %}
+        <div class="bottom-nav">
 
-
-
-
-    <div class='footer-back'> 
-        <footer class="footer">
-
-            <div class="top-footer">
-                <a href="" class="house"><span class="material-symbols-outlined">house</span></a>
-                <a href="" class="factory"><span class="material-symbols-outlined">factory</span></a> 
-                <a href="" class="hotel-icon"> <span class="material-symbols-outlined">hotel</span></a> 
-                <a href="" class="villa-icon"><span class="material-symbols-outlined">villa</span></a> 
+            <div class="service-item" id="house">
+                <span class="material-symbols-outlined">house</span>
+                <h5>All</h5>
             </div>
 
-            <div class="b-footer">
-                <br><br>
-                <a href="" class="all">ALL</a>
-                <a href="" class="properties">PROPERTIES</a>
-                <a href="" class="hotel">HOTEL</a>
-                <a href="" class="villa">VILLA</a>
+            <div class="service-item" id="properties">
+                <span class="material-symbols-outlined">factory</span>
+                <h5>Properties</h5>
             </div>
+
+
+            <div class="service-item" id="hotel">
+                <span class="material-symbols-outlined">hotel</span>
+                <h5>Hotel</h5>
+            </div>
+
+            <div class="service-item" id="villa">
+                <span class="material-symbols-outlined">villa</span>
+                <h5>Villa</h5>
+            </div>
+
+        </div>
+
     </div>
 
 
-    </footer>
-
-
-
-
-</body>
-</html>
+{% endblock %}

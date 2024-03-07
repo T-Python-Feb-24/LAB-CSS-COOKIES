@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/RealEstate/main/static/css/style.css" />
+    <title>Real Estate International</title>
+</head>
+<body  {% if "mode" in request.COOKIES and request.COOKIES.mode == "dark" %} class="dark" {% endif %}>
+
+    <div class="top-nav-container">
+        <nav class="top-nav">
+
+            <a href="{% url 'main:home_view' %}"><h2 class="logo">Home</h2></a>
+
+            <div class="top-bar">
+                <a href="/">Home</a>
+                <a href="{% url 'main:properties_page' %}">Properties</a>
+                <a href="">Services</a>
+                <a href="">About</a>
+                <a href="{% url 'main:contact_view' %}">Contact</a>
+            </div>
+
+            <div class="signup-container">
+                <span class="material-symbols-outlined">person</span>
+                <a href="">Sign up</a>
+                <div class="display-mode">
+                    
+                    <a href="{% url 'main:light_mode_view' %}"><span class="material-symbols-outlined">light_mode</span></a>
+                    <a href="{% url 'main:dark_mode_view' %}"><span class="material-symbols-outlined">dark_mode</span></a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    {% block content %}
+
+    {% endblock %}
+    <footer>
+        <h6>Real Estate Internationl. All Right Reserved 2024</h6>
+    </footer>
+</body>
+</html>

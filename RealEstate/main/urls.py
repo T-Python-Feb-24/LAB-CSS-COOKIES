@@ -1,8 +1,13 @@
-from . import views
 from django.urls import path
+from . import views
 
-App_name='main'
+app_name = "main"
 
-urlpatterns =[
-    path('',views.home_page,name="home_page")
+urlpatterns = [
+    path("", views.home_view, name="home_view"),
+    path("contact/", views.contact_view, name="contact_view"),
+    path("mode/dark/", views.dark_mode_view, name="dark_mode_view"),
+    path("mode/light/", views.light_mode_view, name="light_mode_view"),
+    path("bootstrap/", views.bootstrap_view, name="bootstrap_view"),
+    path("properties/", views.properties_view, name="properties_page")
 ]
