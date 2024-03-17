@@ -10,13 +10,13 @@
 {% block home %}{% endblock %}
 
 </head>
-<body> {% if request.COOKIES.modeDark == "True" %} class="modeDark" {% endif %}>
+<body {% if "mode" in request.COOKIES and request.COOKIES.mode == True %} class="dark"{% else %}class="light" {% endif %} > 
 
     <nav class="right" >
         <span class="material-symbols-outlined"> person </span>
         <button class="sign">Sign In</button>
-        <a href="{% url 'main:mode_light_view' %}" class="light" {% if request.COOKIES.modeDark == 'False' %} active {% endif %}><span class="material-symbols-outlined">light_mode</span></a>
-        <a href="{% url 'main:mode_dark_view' %}"class="dark" {% if request.COOKIES.modeDark == 'True' %} active {% endif %} ><span class="material-symbols-outlined"> dark_mode </span></a>
+        <a href="{% url 'main:mode_light_view' %}" ><span class="material-symbols-outlined">light_mode</span></a>
+        <a href="{% url 'main:mode_dark_view' %}" ><span class="material-symbols-outlined">dark_mode</span></a>
         
     </nav>
     <div class="top">

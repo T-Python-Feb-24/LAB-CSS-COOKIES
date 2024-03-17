@@ -296,15 +296,8 @@ text-decoration: underline;
 
    
 
-.modeDark * {
-   background-image: url("/static/images/skyscraper-dark.jpg");
-   background-size:cover;
 
-}
-.dark *{
-   background-image: url("/static/images/skyscraper-dark.jpg");
-   background-size:cover;
-}
+
 .active {
    color: #9084d3;
 }

@@ -10,15 +10,15 @@ def main_view(request:HttpRequest):
 def mode_dark_view(request:HttpRequest):
 
     response = redirect("main:main_view")
-    response.set_cookie("modeDark", "True", max_age=60*60*24*7)
+    response.set_cookie("modeDark", True)
 
     return response
 
 
-def mode_light_view(request:HttpRequest):
+def light_mode_view(requset: HttpRequest):
 
     response = redirect("main:main_view")
-    response.set_cookie("modeDark", "False")
+    response.set_cookie("modeDark", False)
 
     return response
 
