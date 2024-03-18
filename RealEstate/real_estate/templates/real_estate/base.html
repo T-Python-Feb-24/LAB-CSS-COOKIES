@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'styles/base_style.css' %}" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!--Phudu font-->
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+
+    <!--Ubuntu font-->
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!--fixed-nav icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    {% block style %}
+
+    {% endblock %} 
+</head>
+<body {% if request.COOKIES.darkMode == "True" %} class="darkMode" {% endif %} >
+    <div class="fixed-nav">
+
+        <a href="{% url 'real_estate:home_page' %}" class="home-icon">HOME</a>
+        
+        
+        <div class="nav-frame">
+            <nav class="nav-bar">
+                <a href="{% url 'real_estate:home_page' %}">Home</a> <!--home_page-->
+                <a href="{% url 'real_estate:properties_page' %}">Properties</a><!--properties_page-->
+                <a href="">Services</a>
+                <a href="">About</a>
+                <a href="{% url 'real_estate:contact_page' %}">Contact</a><!--contact_page-->
+            </nav>
+        </div> 
+        
+        
+
+        <div class="nav-setting">
+            <span class="material-symbols-outlined">person</span>   
+            <a href="">Sign up</a>
+            <a href="{% url 'real_estate:light_mode' %}" class="light" ><span class="material-symbols-outlined {% if request.COOKIES.darkMode == 'True' %}hide{% endif %}">light_mode</span></a>
+            <a href="{% url 'real_estate:dark_mode' %}" class="dark"><span class="material-symbols-outlined">dark_mode</span></a>
+        </div>
+
+    </div>
+    
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

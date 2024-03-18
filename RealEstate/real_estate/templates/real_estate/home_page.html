@@ -1,0 +1,73 @@
+{% extends 'real_estate/base.html' %}
+{% block title %}Real Estate{% endblock %}
+{% load static %}
+
+{% block style %}
+{% if request.COOKIES.darkMode == "True" %}
+<style>
+    body{
+        background-image: url('/static/images/skyscraper-dark.jpg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+</style>
+{% endif %}
+
+{% if request.COOKIES.darkMode == "False" %}
+<style>
+    body{
+        background-image: url('/static/images/skyscraper.jpeg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+    }
+    
+</style>
+{% endif %}
+{% endblock %} 
+
+
+{% block content %}
+
+<div class="home-body">
+    <h1 class="home-title">Find your dreams</h1>
+    <p class="home-pragraph">Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties. Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</p>
+    <button class="home-button">Explore Properties</button>
+</div>
+
+
+<footer>
+    <div class="footer-bar">
+    </div>
+    
+    <div class="footer-nav">
+        <div class="icons-bar">
+            <div class="icons house">
+                <span class="material-symbols-outlined icon" style="background-color:#beeab7;">house</span>
+                <h2>All</h2>
+            </div>
+            <div class="icons factory">
+                <span class="material-symbols-outlined icon" style="background-color:#ebd6b6;">factory</span>
+                <h2>Properties</h2>
+            </div>
+            <div class="icons hotel">
+                <span class="material-symbols-outlined icon" style="background-color:#eeb5eb;">hotel</span>
+                <h2>Hotel</h2>
+            </div>
+            <div class="icons villa">
+                <span class="material-symbols-outlined icon" style="background-color:#b9baee;">villa</span>   
+                <h2>Villa</h2>
+            </div>
+        </div>
+    </div> 
+</footer>
+
+
+
+
+
+
+{% endblock %}
