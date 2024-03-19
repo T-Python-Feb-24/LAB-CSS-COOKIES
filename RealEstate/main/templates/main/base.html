@@ -14,7 +14,7 @@
     {% block style %}{% endblock  %}
 </head>
 
-<body>
+<body class = "{%if request.COOKIES.mode == "dark" %} dark  {% endif %}">
     <div class="main-section">
         <div class="section-A">
             <h2>HOME</h2>
@@ -29,8 +29,8 @@
         <div class="section-C">
             <a href=""><span class="material-symbols-outlined icon">person</span></a>
             <a href="">Sign up</a>
-            <a href=""><span class="material-symbols-outlined">wb_sunny</span></a>
-            <a href=""><span class="material-symbols-outlined">dark_mode</span></a>
+            <a href="{% url "main:light_mode" %} "><span class="material-symbols-outlined">wb_sunny</span></a>
+            <a href="{% url "main:dark_mode" %}"><span class="material-symbols-outlined">dark_mode</span></a>
         </div>
     </div>
     

@@ -64,4 +64,6 @@
   }
   
 
-
+.dark *{
+    color :white;
+}

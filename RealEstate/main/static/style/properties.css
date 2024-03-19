@@ -58,3 +58,16 @@ h2{
     font-weight: bold;
     border-radius: 6px;
 }
+
+.dark body{
+    background-color: gray;
+}
+
+.dark .items button {
+  
+}
+
+.dark .items h2{
+    background-color: gray;
+}
+

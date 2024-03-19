@@ -125,3 +125,24 @@ h1{
 .blue{
     color: rgb(33, 21, 199);
 }
+
+.dark{
+    background-image: url('/static/images/skyscraper-dark.jpg');
+
+}
+
+.dark *{
+    color:white;
+}
+
+.dark .section-B{
+    background-color: gray;
+}
+
+.dark .bottom{
+    background-color: gray;
+}
+ 
+.dark .choices{
+    background-color: gray;
+}
