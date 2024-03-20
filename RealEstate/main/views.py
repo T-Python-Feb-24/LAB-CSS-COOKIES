@@ -1,6 +1,6 @@
 
 
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpRequest,HttpResponse
 from datetime import date
 # Create your views here.
@@ -20,6 +20,16 @@ def properties_page(request:HttpRequest):
 
 def contact_page(request:HttpRequest):
     return render(request,"main/contact_page.html")
+
+def light_mode(request):
+    response = redirect('main:index_page')
+    response.set_cookie('darkMode', 'False')
+    return response
+
+def dark_mode(request):
+    response = redirect('main:index_page') 
+    response.set_cookie('darkMode', 'True')
+    return response
 
 
 

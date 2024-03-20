@@ -15,7 +15,7 @@
     {% block style %} {% endblock %}
 
 </head>
-<body >
+<body {% if request.COOKIES.darkMode == "True" %} class="dark"  {% endif %}>
     <header class="header">
         <h1>HOME</h1>
         <nav class="center_nav">
@@ -29,8 +29,8 @@
             
             <a href="#" class="material-symbols-outlined">person</a>
             <a href="#">sign up</a>
-            <a href="#" class="material-symbols-outlined sunny">sunny</a>
-            <a href="#" class="material-symbols-outlined moon">bedtime</a>
+            <a href="{% url 'main:light_mode' %}" class="material-symbols-outlined sunny">sunny</a>
+            <a href="{% url 'main:dark_mode' %}" class="material-symbols-outlined moon">bedtime</a>
         </div>
         
         

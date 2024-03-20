@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="">
 </head>
 {% block content %}
-    <body style="background-image: url('{% static "images/skyscraper.jpeg" %}');">
-    
+<body {% if request.COOKIES.darkMode == "True" %} class="dark" style="background-image: url('{% static "images/skyscraper-dark.jpg" %}');"   {% else%}class="light" style="background-image: url('{% static "images/skyscraper.jpeg" %}');"  {% endif %}>
+
     <h1 class="dream">FIND YOUR <BR> DREAMS</h1>
    
      <p class="para">Our catalog will surprise you. Rather,discover an unprecendented offers of luxury properties.Our  <br> catalog will surprise you. Rather,discover an unprecendented offers of luxury properties.</p>  
