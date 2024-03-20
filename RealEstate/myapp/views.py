@@ -24,12 +24,17 @@ def properties_view(request):
 
 
 
-def mode_dark(request: HttpRequest) -> HttpResponse:
-    response = redirect("main:home_view")
-    response.set_cookie("Dark_mode", "True", max_age=60*60*24*7)
+def dark_mode_view(requset: HttpRequest):
+
+    response = redirect("myapp:home")
+    response.set_cookie("mode", "dark")
+
     return response
 
-def mode_light(request: HttpRequest) -> HttpResponse:
-    response = redirect("myapp:home_view")
-    response.set_cookie("Dark_mode", "False")  # Change to "Dark_mode"
-    return render(request, "myapp/home.html")
+
+def light_mode_view(requset: HttpRequest):
+
+    response = redirect("myapp:home")
+    response.set_cookie("mode", "light")
+
+    return response

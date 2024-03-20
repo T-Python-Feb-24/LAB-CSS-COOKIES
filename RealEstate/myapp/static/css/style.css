@@ -1,17 +1,25 @@
 
-body {
-
-    
+.light_mode {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Phudu', sans-serif;
+    background-image: url('/static/resources/skyscraper.jpeg');
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Set the desired height for the background */
+    width: 100%; /* Set the width to 100% to cover the entire screen */
+  }
+.dark_mode{
     display:grid;
     align-items: center;
     justify-content: center;
-    font-family: 'Phudu', sans-serif; 
-    background-image: url('/static/resources/skyscraper.jpeg') ;
+    background-image: url('/static/resources/skyscraper-dark.jpg') ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    height: 55vh; 
 
 }
 
@@ -31,14 +39,7 @@ body {
         left: 50px; /* End position, adjust as needed */
     }
 }
-/*
-.shine {
-    font-size: 100px;
-    color: #fff;
-    position: relative;
-    animation: shineEffect 2s ease-in-out infinite; 
-}
-*/
+
 @keyframes shineEffect {
     0% { opacity: 0.5; text-shadow: 0 0 10px #fff; }
     50% { opacity: 1; text-shadow: 0 0 20px #ff0; }
@@ -47,54 +48,28 @@ body {
 
 
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    column-gap: 1.1rem;
-    padding: 10px 20px;
-    align-items: center;
-}
 
-nav button {
-    background-color: rgb(225, 138, 31);
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+
+
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    padding: 30px 30px;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    top: 15px;
+    left: 45px;
+    right: 15px;
+    height: 60px;
+    z-index: 2;
 }
-/*
-.middle-section {
-    flex-grow: 0.3;
-    background-color: #f0f0f0;
-    justify-items:center ;
-    border-radius: 25px;
-    text-align: center;
-    height: 50px;;
-}
-.navigation-box{
-    display: flex;
-    justify-items: space-evenlynter;
-    max-width: 800px; 
-    margin:auto;
-}*/
+
 .middle-section {
     flex-grow: 0.2;
     background-color: #f0f0f0;
     border-radius: 25px;
     text-align: center;
+    align-self:center;
     height: 60px;
     display: flex;
     align-items: center; /* Center vertically */
@@ -114,7 +89,10 @@ nav button {
     text-decoration: none; /* Remove underline */
     transition: color 0.3s; /* Add transition for smooth hover effect */
 }
-
+.P-home{
+    font-size: 32px;
+    font-weight: bold;
+}
 .navigation-box a:hover {
     color: #555; /* Change color on hover */
 }
@@ -126,7 +104,6 @@ nav button {
     margin: 0 50px;
 }
 .right-section {
-    justify-items: space-evenly;
     display: flex;
     align-items: center;
     margin: 0 50px;
@@ -167,7 +144,7 @@ nav button {
 
 
 
-.header-bottom {
+.box-bottom {
     background-color: #f0f0f0;
     border-radius: 25px;
     text-align: center;
@@ -223,10 +200,6 @@ nav button {
 
 
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
 
 
 
@@ -285,8 +258,6 @@ footer {
     padding: 0.05rem;
     text-align: center;
 }
-/*icons styles*/
-
 .material-symbols-outlined{
     margin-right: 15px;
 }
@@ -296,69 +267,7 @@ footer {
     position: relative; /* Position relative for absolute positioning of circle */
 }
 
-/* Define styles for the circular background */
-/*
-.circle-green {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: lightgreen; /* Light green background color 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-}
-.circle-green:hover {
-    background-color: green; /* Dark green background color on hover 
-}
-.icon-green {
-    font-family: 'Material Icons'; /* Replace 'Material Icons' with your font icon family 
-    font-size: 24px;
-    color: darkgreen; /* Dark green color for the icon *
-    transition: color 0.3s; /* Smooth transition for icon color change *
-}
-.circle-green:hover .icon-green {
-    color: lightgreen; /* Light green color for the icon on hover *
-}
-.circle-brown {
-    background-color: rgb(208, 125, 16);
-    width: 50px; /* Adjust the size of the circle *
-    height: 50px; /* Adjust the size of the circle *
-    border-radius: 50%; /* Make the shape circular *
-    position: absolute; /* Position absolute for precise placement *
-    top: -25px; /* Adjust the vertical position to center *
-    left: 50%; /* Center horizontally *
-    transform: translateX(-50%); /* Center horizontally *
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.circle-pink {
-    background-color: rgb(204, 53, 159);
-    width: 50px; /* Adjust the size of the circle *
-    height: 50px; /* Adjust the size of the circle *
-    border-radius: 50%; /* Make the shape circular *
-    position: absolute; /* Position absolute for precise placement *
-    top: -25px; /* Adjust the vertical position to center *
-    left: 50%; /* Center horizontally *
-    transform: translateX(-50%); /* Center horizontally *
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.circle-blue {
-    background-color: rgb(14, 106, 168);
-    width: 50px; /* Adjust the size of the circle *
-    height: 50px; /* Adjust the size of the circle *
-    border-radius: 50%; /* Make the shape circular *
-    position: absolute; /* Position absolute for precise placement *
-    top: -25px; /* Adjust the vertical position to center *
-    left: 50%; /* Center horizontally *
-    transform: translateX(-50%); /* Center horizontally *
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
+
 .color_green{
     background-color:rgba(17, 255, 0, 0.312);
     padding: 17px 12px;
@@ -403,19 +312,5 @@ footer {
     transform: scale(1.2);
 
 }
-.text {
-    font-size: 12px;
-    margin-top: 5px;
-    text-align: center;
-}
 
-
-/* Define styles for the font icon */
-.icon {
-    font-family: 'Material Icons'; /* Replace 'Material Icons' with your font icon family */
-    font-size: 24px;
-    color: #fff; /* Default color */
-    transition: color 0.3s; /* Transition effect for color change */
-    cursor: pointer;
-}
 
